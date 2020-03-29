@@ -14,11 +14,11 @@
     <script async defer src="https://buttons.github.io/buttons.js"></script>
     <title>
         
-          
+          编程-python - null
         
     </title>
 
-    <link rel="canonical" href="http://yoursite.com/archives/">
+    <link rel="canonical" href="http://yoursite.com/2020/03/29/编程-python/">
 
     <!-- Bootstrap Core CSS -->
 
@@ -119,13 +119,21 @@
 			
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1" style="z-index:2;">
                 
-				
-                    <div class="site-heading"  style="padding:40px">
-                        <h1>Z</h1>
-                        <!--<hr class="small">-->
-                        <span class="subheading"></span>
+                    <div class="post-heading" style="padding:40px">
+                        <div class="tags">
+                            
+                              <a class="tag" href="/tags/#code" title="code">code</a>
+                            
+                              <a class="tag" href="/tags/#python" title="python">python</a>
+                            
+                        </div>
+                        <h1>编程-python</h1>
+                        <h2 class="subheading"></h2>
+                        <span class="meta">
+                            Posted by zhangsunny on
+                            2020-03-29
+                        </span>
                     </div>
-                
                 
                 </div>
             </div>
@@ -228,208 +236,174 @@
 
 
     <!-- Main Content -->
-    <!-- Main Content -->
-<div class="container">
-    <div class="row">
-        
+    <!-- Modify by Yu-Hsuan Yen -->
 
-<!-- USE SIDEBAR -->
-    <!-- Post Container -->
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Post Container -->
             <div class="
-                col-lg-8 col-lg-offset-1
-                col-md-8 col-md-offset-1
-                col-sm-12
-                col-xs-12
-                post-container
-            ">
-            
-	        
-                
-<!-- Main Content -->
-<div class="container">
-    <div class="row">
-        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-            <!-- 归档列表 -->
-            
-            
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
 
-             <!-- 归档列表 -->
+                <h2 id="小技巧"><a href="#小技巧" class="headerlink" title="小技巧"></a>小技巧</h2><h3 id="pip相关"><a href="#pip相关" class="headerlink" title="pip相关"></a>pip相关</h3><ul>
+<li>使用国内源</li>
+</ul>
+<blockquote>
+<p><a href="https://www.cnblogs.com/sunnydou/p/5801760.html" target="_blank" rel="noopener">https://www.cnblogs.com/sunnydou/p/5801760.html</a></p>
+</blockquote>
+<p><code>pip install web.py -i http://pypi.douban.com/simple</code></p>
+<p>或者修改全局文件 linux的文件在~/.pip/pip.conf，windows在%HOMEPATH%\pip\pip.ini （没有就自建文件）</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">[global]</span><br><span class="line">index-url &#x3D; http:&#x2F;&#x2F;pypi.douban.com&#x2F;simple</span><br><span class="line">[install]</span><br><span class="line">trusted-host&#x3D;pypi.douban.com</span><br></pre></td></tr></table></figure>
 
-            
-            <div class="one-tag-list">
-                <span class="fa fa-calendar-times-o listing-seperator" id="2020">
-                    <span class="tag-text">2020</span>
-                </span>
-                <ul>
+<ul>
+<li><p>使用代理<br><code>pip install -r requirements.txt --proxy=代理服务器IP:端口号</code></p>
+</li>
+<li><p>requirements文件</p>
+</li>
+</ul>
+<p>导出：pip freeze &gt; requirements.txt</p>
+<p>安装：pip install -r requirement.txt</p>
+<h3 id="新建文件夹"><a href="#新建文件夹" class="headerlink" title="新建文件夹"></a>新建文件夹</h3><p><code>os.makedirs(&#39;./a&#39;, exist_ok=True)</code> 通过使用<code>exist_ok</code>选项，能够避免每次创建文件夹都要先判断是否已存在，使用该选项在已有文件夹后，不会提出OSError</p>
+<h2 id="函数及模块使用"><a href="#函数及模块使用" class="headerlink" title="函数及模块使用"></a>函数及模块使用</h2><h3 id="Hanlp中文分词模块"><a href="#Hanlp中文分词模块" class="headerlink" title="Hanlp中文分词模块"></a>Hanlp中文分词模块</h3><ul>
+<li>安装：<a href="https://blog.csdn.net/GAOYUAN19941118/article/details/85009217" target="_blank" rel="noopener">https://blog.csdn.net/GAOYUAN19941118/article/details/85009217</a></li>
+<li>使用：<a href="https://blog.csdn.net/u011961856/article/details/77167546" target="_blank" rel="noopener">https://blog.csdn.net/u011961856/article/details/77167546</a></li>
+<li>pyhanlp报FileNotFoundErro：<a href="https://blog.csdn.net/ylhlly/article/details/100057534" target="_blank" rel="noopener">https://blog.csdn.net/ylhlly/article/details/100057534</a></li>
+<li>手动配置：<a href="https://github.com/hankcs/pyhanlp/wiki/%E6%89%8B%E5%8A%A8%E9%85%8D%E7%BD%AE" target="_blank" rel="noopener">https://github.com/hankcs/pyhanlp/wiki/%E6%89%8B%E5%8A%A8%E9%85%8D%E7%BD%AE</a></li>
+</ul>
+<h2 id="logging模块"><a href="#logging模块" class="headerlink" title="logging模块"></a>logging模块</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> logging</span><br><span class="line"></span><br><span class="line">logging.basicConfig(</span><br><span class="line">    level=logging.DEBUG,</span><br><span class="line">    format=<span class="string">'%(asctime)s [%(levelname)s]: %(message)s'</span>,</span><br><span class="line">    datefmt=<span class="string">'%Y-%m-%d %A %H:%M:%S'</span>,</span><br><span class="line">    filename=ROOT+<span class="string">'log.txt'</span>,</span><br><span class="line">    filemode=<span class="string">'a'</span>)</span><br><span class="line">logging.info(<span class="string">'Hello World'</span>)</span><br></pre></td></tr></table></figure>
+
+<h2 id="常见错误"><a href="#常见错误" class="headerlink" title="常见错误"></a>常见错误</h2><h3 id="non-default-argument-follows-default-argument"><a href="#non-default-argument-follows-default-argument" class="headerlink" title="non-default argument follows default argument"></a>non-default argument follows default argument</h3><blockquote>
+<p><a href="https://blog.csdn.net/weixin_40320794/article/details/79367243" target="_blank" rel="noopener">https://blog.csdn.net/weixin_40320794/article/details/79367243</a></p>
+</blockquote>
+<p>函数定义时可以声明参数的默认值，但是有默认值的参数必须放在后面，且其后的参数必须全部都有默认值，否则就会报错，需要仔细检查</p>
+
                 
-                  <!-- <li class="listing-item">
-                  <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-                  <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-                  </li> -->
-                 <li >
-                    03-29
-                    <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-                    <a href="/2020/03/29/编程-python/" style="color: #0085a1">
-                        <span>
-                            编程-python
-                        </span>
-                    </a>
-                    <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-                </li>
-                
-                  <!-- <li class="listing-item">
-                  <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-                  <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-                  </li> -->
-                 <li >
-                    03-29
-                    <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-                    <a href="/2020/03/29/编程-hexo/" style="color: #0085a1">
-                        <span>
-                            编程-hexo
-                        </span>
-                    </a>
-                    <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-                </li>
-                
+
+                <hr>
+                <!-- Pager -->
+                <ul class="pager">
+                    
+                    
+                        <li class="next">
+                            <a href="/2020/03/29/编程-hexo/" data-toggle="tooltip" data-placement="top" title="编程-hexo">下一篇 &rarr;</a>
+                        </li>
+                    
                 </ul>
+
+                <br>
+
+                <!--打赏-->
+                
+                <!--打赏-->
+
+                <br>
+                <!--分享-->
+                
+                    <div class="social-share"  data-wechat-qrcode-helper="" align="center"></div>
+                    <!--  css & js -->
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/css/share.min.css">
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/js/social-share.min.js"></script>
+                
+                <!--分享-->
+                <br>                       
+                
+                <!-- require APlayer -->
+                
+
+                <!-- disqus comment start -->
+                
+                <!-- disqus comment end -->
+
+                
+				
             </div>
-            
 
+            <!-- Tabe of Content -->
+            <!-- Table of Contents -->
 
+                
+            <!-- Sidebar Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                <!-- Featured Tags -->
+                
+                <section>
+                    <!-- no hr -->
+                    <h5><a href="/tags/">标签云</a></h5>
+                    <div class="tags">
+                       
+                          <a class="tag" href="/tags/#code" title="code">code</a>
+                        
+                          <a class="tag" href="/tags/#python" title="python">python</a>
+                        
+                    </div>
+                </section>
+                
+
+                <!-- Friends Blog -->
+                
+                <hr>
+                <h5>FRIENDS</h5>
+                <ul class="list-inline">
+
+                    
+                        <li><a href="https://github.com/zhangsunny" target="_blank">GitHub</a></li>
+                    
+                        <li><a href="https://zhangsunny.github.io/" target="_blank">Blog</a></li>
+                    
+                </ul>
+                
+            </div>
         </div>
     </div>
-</div>
-            
+</article>
 
 
 
-                <!-- 如果开启评论功能 -->
-                
-            </div>
-
-          <!-- Sidebar Container -->
-<div class="
-    col-lg-3 col-lg-offset-0
-    col-md-3 col-md-offset-0
-    col-sm-12
-    col-xs-12
-    sidebar-container
-">
-    
-        <!-- Featured Tags -->
-
-<section>
-    <!-- no hr -->
-    <h5><a href="/tags/">标签云</a></h5>
-    <div class="tags">
-        
-            
-            <a href="/tags/code" title="code" rel="2">code</a>
-            
-        
-            
-            <a href="/tags/js" title="js" rel="1">js</a>
-            
-        
-            
-            <a href="/tags/python" title="python" rel="1">python</a>
-            
-        
-    </div>
-</section>
-
-        <hr>
-    
-        <!-- Short About -->
-<section class="visible-md visible-lg">
-    <h5><a href="/about/">关于</a></h5>
-    <div class="short-about">
-
-        
-            <img id = "avatar_pic" src="/img/avatar/qiaoba.jpg" />
-        
-
-        
-            <p>Be Kind to the World!</p>
-        
-
-        <!-- SNS Link -->
-        <ul class="list-inline">
-            
-            
-            
-
-            
-
-            
-
-            
-                <li>
-                    <a target="_blank"  href="https://github.com/zhangsunny">
-                        <span class="fa-stack fa-lg">
-                            <i class="fa fa-circle fa-stack-2x"></i>
-                            <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                        </span>
-                    </a>
-                </li>
-            
-            
-            
-            
-        </ul>
-    </div>
-</section>
-
-        <hr>
-    
-        
-  <h5>最近发表</h3>
-  <div class="widget">
-    <ul>
-      
-        <li>
-          <a href="/2020/03/29/%E7%BC%96%E7%A8%8B-python/">编程-python</a>
-        </li>
-      
-        <li>
-          <a href="/2020/03/29/%E7%BC%96%E7%A8%8B-hexo/">编程-hexo</a>
-        </li>
-      
-    </ul>
-  </div>
-
-        <hr>
-    
-        
-    <h5>归档</h5>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/03/">三月 2020</a><span class="archive-list-count">2</span></li></ul>
-    </div>
-
-        <hr>
-    
-        <!-- Friends Blog -->
-
-<h5>友链</h5>
-<ul class="list-inline">
-
-    
-        <li><a href="https://github.com/zhangsunny" target="_blank">GitHub</a></li>
-    
-        <li><a href="https://zhangsunny.github.io/" target="_blank">Blog</a></li>
-    
-</ul>
 
 
-        <hr>
-    
-</div>
 
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+<!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
+<script>
+    async("https://cdn.bootcss.com/anchor-js/1.1.1/anchor.min.js",function(){
+        anchors.options = {
+          visible: 'hover',
+          placement: 'left',
+          icon: 'ℬ'
+        };
+        anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
+    })
+</script>
+<style>
+    /* place left on bigger screen */
+    @media all and (min-width: 800px) {
+        .anchorjs-link{
+            position: absolute;
+            left: -0.75em;
+            font-size: 1.1em;
+            margin-top : -0.1em;
+        }
+    }
+</style>
 
-        
-    </div>
-</div>
 
 
     <!-- Footer没使用 -->
@@ -544,7 +518,7 @@
 <script>
     // only load tagcloud.js in tag.html
     if($('#tag_cloud').length !== 0){
-        async("http://yoursite.com/archives/index.html/js/jquery.tagcloud.js",function(){
+        async("http://yoursite.com/2020/03/29/%E7%BC%96%E7%A8%8B-python/index.html/js/jquery.tagcloud.js",function(){
             $.fn.tagcloud.defaults = {
                 //size: {start: 1, end: 1, unit: 'em'},
                 color: {start: '#bbbbee', end: '#0085a1'},
