@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keyword"  content="">
+    <link rel="shortcut icon" href="/img/ironman-draw.png">
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <title>
+        
+          折腾-Ubuntu - null
+        
+    </title>
+
+    <link rel="canonical" href="http://yoursite.com/2020/04/17/折腾-ubuntu/">
+
+    <!-- Bootstrap Core CSS -->
+
+   
+<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.4.1/css/bootstrap.min.css">
+
+
+    
+
+    <!-- Custom CSS --> 
+    
+<link rel="stylesheet" href="/css/beantech.min.css">
+
+
+    
+<link rel="stylesheet" href="/css/donate.css">
+
+	
+<link rel="stylesheet" href="/css/w3.css">
+
+    <!-- Pygments Highlight CSS -->
+    
+<link rel="stylesheet" href="/css/highlight.css">
+
+
+    
+<link rel="stylesheet" href="/css/widget.css">
+
+
+    
+<link rel="stylesheet" href="/css/rocket.css">
+
+
+    
+<link rel="stylesheet" href="/css/signature.css">
+
+
+    
+<link rel="stylesheet" href="/css/toc.css">
+
+
+    <!-- Custom Fonts -->
+    <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+    <!-- Hux change font-awesome CDN to qiniu -->
+    <link href="https://cdn.staticfile.org/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+    <!-- Hux Delete, sad but pending in China
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/
+    css'>
+    -->
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	
+
+    <!-- ga & ba script hoook -->
+    <script></script>
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="">
+	<!-- Modified by Yu-Hsuan Yen -->
+<!-- Post Header -->
+<style type="text/css">
+    header.intro-header{
+    }
+   .post-heading{
+    padding:20px;
+    }
+  .person {
+    border: 10px solid transparent;
+    margin-bottom: 25px;
+    width: 80%;
+    height: 80%;
+    opacity: 0.7;
+  }
+  .person:hover {
+    border-color: #f1f1f1;
+  }
+
+</style>
+
+<header id="headerid" class="w3-indigo intro-header" style="position:relative;">
+    <!-- Signature -->
+	
+        <div class="container">
+            <div class=" row" >
+			
+			<canvas id="particles-js-canvas" style="position:absolute;z-index:1;top:0px;left:0px;" width="100%" height="50%"></canvas>
+			
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1" style="z-index:2;">
+                
+                    <div class="post-heading" style="padding:40px">
+                        <div class="tags">
+                            
+                              <a class="tag" href="/tags/#linux" title="linux">linux</a>
+                            
+                        </div>
+                        <h1>折腾-Ubuntu</h1>
+                        <h2 class="subheading"></h2>
+                        <span class="meta">
+                            Posted by zhangsunny on
+                            2020-04-17
+                        </span>
+                    </div>
+                
+                </div>
+            </div>
+        </div>
+  
+</header>
+
+	
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Z</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <!-- Known Issue, found by Hux:
+            <nav>'s height woule be hold on by its content.
+            so, when navbar scale out, the <nav> will cover tags.
+            also mask any touch event of tags, unfortunately.
+        -->
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a  href="/">主页</a>
+                    </li>
+		    
+                    
+
+                        
+                        <li>
+           
+                            <a  href="/archives">归档</a>
+                           
+                        </li>
+                        
+                    
+
+                        
+                        <li>
+           
+                            <a  href="/tags/code">编程</a>
+                           
+                        </li>
+                        
+                    
+
+                        
+                        <li>
+           
+                            <a  href="/tags/js">JS</a>
+                           
+                        </li>
+                        
+                    
+                    
+                </ul>
+            </div>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+<script>
+    // Drop Bootstarp low-performance Navbar
+    // Use customize navbar with high-quality material design animation
+    // in high-perf jank-free CSS3 implementation
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        // CLOSE
+            $navbar.className = " ";
+            // wait until animation end.
+            setTimeout(function(){
+                // prevent frequently toggle
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        // OPEN
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+    <!-- Main Content -->
+    <!-- Modify by Yu-Hsuan Yen -->
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Post Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                <h2 id="安装注意事项"><a href="#安装注意事项" class="headerlink" title="安装注意事项"></a>安装注意事项</h2><p>windows下安装双系统需要注意：</p>
+<ul>
+<li>关闭windows电源选项中的快速启动</li>
+<li>关闭bios的快速启动</li>
+<li>bios中security boot 选择开启并选择 other os</li>
+<li>注意UEFI安装系统，需要三个分区/（主分区ext4，100-200G，重装时需要格式化，软件会装到这里，需要足够大），EFI（逻辑分区，100M），/home（逻辑分区ext4，重装系统时不用格式化，存储个人文件的位置），设置EFI所在分区为引导位置（双系统也要设置从ubuntu的引导启动）</li>
+</ul>
+<p>对于windows系统安装时不要直接使用一键安装，使用winNT安装</p>
+<p><strong><code>重要</code></strong></p>
+<blockquote>
+<p>(只参考如何禁用nomodeset)：<a href="https://blog.csdn.net/dickwinters2011/article/details/82218495" target="_blank" rel="noopener">https://blog.csdn.net/dickwinters2011/article/details/82218495</a></p>
+</blockquote>
+<ul>
+<li>安装Ubuntu18.04，安装前记得添加nomodeset，暂时禁用nouveau显卡驱动: 在进入grub启动界面时，按e键进行编辑，在倒数第二行quiet slash后添加nomodeset <code>quiet slash nomodeset</code> （<code>这种方法也可以用于修复花屏，黑屏</code>）</li>
+<li>安装完成进入桌面不要进行其他操作，直接重启，重启时再一次手动添加nomodeset</li>
+<li>重启进入桌面后不要进行其他操作，尤其不要打开驱动更新，以免开始运行或者安装nouveau</li>
+<li>删除N卡驱动：</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&gt; sudo apt-get purge nvidia*</span><br><span class="line">&gt; sudo -s -H</span><br><span class="line">&gt; sudo gedit &#x2F;etc&#x2F;modprobe.d&#x2F;blacklist-nouveau.conf</span><br><span class="line">blacklist nouveau</span><br><span class="line">options nouveau modeset&#x3D;0</span><br><span class="line">&gt; sudo update-initramfs -u</span><br><span class="line">&gt; lspci | grep nouveau (检查禁用是否成功，如无输出则成功)</span><br></pre></td></tr></table></figure>
+<ul>
+<li>安装lightdm界面（安装完CUDA会黑屏的原因是驱动和gdm3界面冲突，因此也可以不禁用直接安装lightdm就可以）：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&gt; sudo apt-get install lightdm</span><br><span class="line">&gt; sudo dpkg-reconfigure lightdm (不一定需要这个，但是使用就会进入界面)</span><br></pre></td></tr></table></figure></li>
+<li>CUDA直接自带驱动，所以可以不安装驱动，直接安装cuda.deb</li>
+</ul>
+<h2 id="修复grub"><a href="#修复grub" class="headerlink" title="修复grub"></a>修复grub</h2><blockquote>
+<p><a href="https://blog.csdn.net/weixin_43491112/article/details/84064142" target="_blank" rel="noopener">https://blog.csdn.net/weixin_43491112/article/details/84064142</a></p>
+</blockquote>
+<p>在安装ubuntu系统时，有时会出现无法添加grub的问题，此时的系统其实已经安装好了，只是没有添加grub引导。可以重启后，进入启动盘的试用ubuntu，通过控制台手动修复grub</p>
+<ul>
+<li>sudo add-apt-repository ppa:yannubuntu/boot-repair &amp;&amp; sudo apt-get update</li>
+<li>sudo apt-get install -y boot-repair &amp;&amp; boot-repair</li>
+<li>sudo update-grub</li>
+</ul>
+<h2 id="常用基本操作"><a href="#常用基本操作" class="headerlink" title="常用基本操作"></a>常用基本操作</h2><h3 id="dpkg安装deb包缺少依赖项"><a href="#dpkg安装deb包缺少依赖项" class="headerlink" title="dpkg安装deb包缺少依赖项"></a>dpkg安装deb包缺少依赖项</h3><blockquote>
+<p><a href="https://www.cnblogs.com/horizonli/p/5179224.html" target="_blank" rel="noopener">https://www.cnblogs.com/horizonli/p/5179224.html</a></p>
+</blockquote>
+<ul>
+<li>sudo dpkg -i ***.deb</li>
+<li>sudo apt-get -f -y install</li>
+</ul>
+<p><strong>备选</strong></p>
+<ul>
+<li>安装gdebi命令：sudo apt-get install gdebi</li>
+<li>sudo gdebi ***.deb (自动安装依赖项)</li>
+</ul>
+<h3 id="文件解压"><a href="#文件解压" class="headerlink" title="文件解压"></a>文件解压</h3><ul>
+<li>tar文件：tar -zxvf ***.tar.gz</li>
+<li>gz文件：gunzip ***.gz</li>
+</ul>
+<h3 id="开机自动挂载硬盘"><a href="#开机自动挂载硬盘" class="headerlink" title="开机自动挂载硬盘"></a>开机自动挂载硬盘</h3><blockquote>
+<p><a href="https://blog.csdn.net/qq_35451572/article/details/79541106" target="_blank" rel="noopener">https://blog.csdn.net/qq_35451572/article/details/79541106</a></p>
+</blockquote>
+<ul>
+<li>查看分区选择需要的分区编号：sudo fdisk -l</li>
+<li>查看所选分区对应的UUID：sudo blkid /dev/sda3</li>
+<li>创建挂载目录：sudo mkdir /mnt/Data (mnt文件夹是默认挂载，图像界面系统默认挂载在media)</li>
+<li>修改配置文件：sudo gedit /etc/fstab</li>
+<li>在文件末尾添加：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">UUID&#x3D;88069947069936E2 &#x2F;mnt&#x2F;Data ntfs defaults  0  2</span><br></pre></td></tr></table></figure>
+其中，第一个数字：0表示开机不检查磁盘，1表示开机检查磁盘； 第二个数字：0表示交换分区，1代表启动分区（Linux），2表示普通分区；挂载的分区是在WIn系统下创建的分区，磁盘格式为ntfs</li>
+</ul>
+<h3 id="添加国内软件源"><a href="#添加国内软件源" class="headerlink" title="添加国内软件源"></a>添加国内软件源</h3><blockquote>
+<p><a href="https://blog.csdn.net/weixin_32820767/article/details/83820505" target="_blank" rel="noopener">https://blog.csdn.net/weixin_32820767/article/details/83820505</a></p>
+</blockquote>
+<ul>
+<li>sudo cp /etc/apt/sources.list  /etc/apt/sources.list.backup (备份以防万一)</li>
+<li>sudo gedit /etc/apt/sources.list</li>
+</ul>
+<h3 id="管理无线热点"><a href="#管理无线热点" class="headerlink" title="管理无线热点"></a>管理无线热点</h3><ul>
+<li>输入命令：<code>mn-connection-editor</code></li>
+<li>修改hotspot网络</li>
+</ul>
+<h2 id="安装必备软件"><a href="#安装必备软件" class="headerlink" title="安装必备软件"></a>安装必备软件</h2><p><strong>主要参考</strong>: <a href="https://blog.csdn.net/ice__snow/article/details/80152068" target="_blank" rel="noopener">https://blog.csdn.net/ice__snow/article/details/80152068</a></p>
+<h3 id="Sogou-for-Linux"><a href="#Sogou-for-Linux" class="headerlink" title="Sogou for Linux"></a>Sogou for Linux</h3><ul>
+<li>搜狗官网下载deb文件安装：<a href="https://pinyin.sogou.com/linux/" target="_blank" rel="noopener">https://pinyin.sogou.com/linux/</a></li>
+<li>settings -&gt; region&amp;language 中点击manage installed languages，如果提示安装就确定</li>
+<li>修改 keyboard input method system 为 fcitx</li>
+<li>重启</li>
+<li>此时在屏幕右上方出现小键盘图标（fcitx），右键选择配置，点击添加，取消勾选only show current lauguage，添加sogou pinyin</li>
+</ul>
+<p><strong>备选方案</strong></p>
+<ul>
+<li>使用系统自带的intelligent pinyin</li>
+<li>在settings -&gt; region&amp;language 的 Input Sources 中添加 chinese(intelligent pinyin)</li>
+</ul>
+<h3 id="Chrome"><a href="#Chrome" class="headerlink" title="Chrome"></a>Chrome</h3><ul>
+<li>下载deb文件直接安装：<a href="https://www.google.com/intl/en/chrome/" target="_blank" rel="noopener">https://www.google.com/intl/en/chrome/</a></li>
+</ul>
+<h3 id="Clash-for-Linux"><a href="#Clash-for-Linux" class="headerlink" title="Clash for Linux"></a>Clash for Linux</h3><blockquote>
+<p><a href="https://www.jianshu.com/p/2906066d2e0a" target="_blank" rel="noopener">https://www.jianshu.com/p/2906066d2e0a</a></p>
+</blockquote>
+<ul>
+<li>下载clash-linux-amd64，解压：<a href="https://github.com/Dreamacro/clash/releases" target="_blank" rel="noopener">https://github.com/Dreamacro/clash/releases</a></li>
+<li>执行解压后的文件，注意授予执行权限</li>
+<li>修改 ~/.config/clash/config.yml 文件</li>
+<li>配置系统代理，settings -&gt; network -&gt; proxy manual</li>
+<li>建立桌面图标 sudo gedit /usr/share/applications/Clash.desktop</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">[Desktop Entry]</span><br><span class="line">Version&#x3D;0.14.0</span><br><span class="line">Name&#x3D;Clash</span><br><span class="line">Comment&#x3D;A rule-based tunnel in Go</span><br><span class="line">Exec&#x3D;&#x2F;home&#x2F;zhang&#x2F;Programs&#x2F;clash&#x2F;clash-linux-amd64</span><br><span class="line">Icon&#x3D;&#x2F;home&#x2F;zhang&#x2F;Programs&#x2F;clash&#x2F;clash-logo.png</span><br><span class="line">Terminal&#x3D;false</span><br><span class="line">Type&#x3D;Application</span><br><span class="line">Categories&#x3D;Network</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>注意执行路径不能使用 ~ ，要使用完整的路径，图标文件可以从 <a href="http://clash.razord.top中另存一个" target="_blank" rel="noopener">http://clash.razord.top中另存一个</a></li>
+<li>设置开机自启动：在 startup applications preferences 中添加执行程序（测试发现必须是执行文件，不能是.desktop文件）</li>
+</ul>
+<h3 id="坚果云-VNote"><a href="#坚果云-VNote" class="headerlink" title="坚果云+VNote"></a>坚果云+VNote</h3><ul>
+<li>官网下载坚果云，自动设置了开机自启，可以配合硬盘自动挂载，将数据保存在机械硬盘中：<a href="https://www.jianguoyun.com/s/downloads/linux" target="_blank" rel="noopener">https://www.jianguoyun.com/s/downloads/linux</a></li>
+<li>VNote在github下载AppImage：<a href="https://github.com/tamlok/vnote/releases" target="_blank" rel="noopener">https://github.com/tamlok/vnote/releases</a> （AppImage是可以直接执行的程序，但首先得chmod +x）</li>
+<li>可以创建Desktop文件方便使用</li>
+</ul>
+<h3 id="VS-Code-Git"><a href="#VS-Code-Git" class="headerlink" title="VS Code + Git"></a>VS Code + Git</h3><ul>
+<li>官网下载安装：<a href="https://code.visualstudio.com/Download" target="_blank" rel="noopener">https://code.visualstudio.com/Download</a></li>
+<li>Git安装： sudo apt-get install git</li>
+<li>注意：ubuntu下vscode 不需要配置git bash的路径，所以如果有该选项需要删除</li>
+</ul>
+<h3 id="Team-Viewer"><a href="#Team-Viewer" class="headerlink" title="Team Viewer"></a>Team Viewer</h3><p><strong>注意，很奇怪的是安装64位的teamviewer不显示图形界面，所以应该下载32位的安装，32位的安装需要添加i386的支持</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&gt; sudo dpkg --add-architecture i386</span><br></pre></td></tr></table></figure>
+
+<p>重装了一次系统后，发现又可以安装64位的，很奇怪。。难道也是与gdm3桌面冲突？</p>
+<ul>
+<li>官网下载安装：<a href="https://www.teamviewer.com/en/download/linux/" target="_blank" rel="noopener">https://www.teamviewer.com/en/download/linux/</a></li>
+</ul>
+<h3 id="Wechat，TIM"><a href="#Wechat，TIM" class="headerlink" title="Wechat，TIM"></a>Wechat，TIM</h3><ul>
+<li>Wechat：<a href="https://github.com/geeeeeeeeek/electronic-wechat/releases" target="_blank" rel="noopener">https://github.com/geeeeeeeeek/electronic-wechat/releases</a></li>
+</ul>
+<p>记得给解压文件中的执行文件授权执行，如果提示“./electronic-wechat: error while loading shared libraries: libgconf-2.so.4: cannot open shared object file: No such file or directory”，则需要安装<strong>libgconf2-4</strong></p>
+<ul>
+<li><p>TIM: <a href="https://www.lulinux.com/archives/1319" target="_blank" rel="noopener">https://www.lulinux.com/archives/1319</a></p>
+</li>
+<li><p>下载所有文件： git clone <a href="https://github.com/wszqkzqk/deepin-wine-ubuntu.git" target="_blank" rel="noopener">https://github.com/wszqkzqk/deepin-wine-ubuntu.git</a></p>
+</li>
+<li><p>解压文件，进入文件夹，执行其下的install.sh</p>
+</li>
+<li><p>下载deb文件并按照：<a href="http://mirrors.aliyun.com/deepin/pool/non-free/d/deepin.com.qq.im/" target="_blank" rel="noopener">http://mirrors.aliyun.com/deepin/pool/non-free/d/deepin.com.qq.im/</a></p>
+</li>
+<li><p>在/usr/share/applications中找到生成的desktop文件</p>
+</li>
+</ul>
+<h3 id="Plank"><a href="#Plank" class="headerlink" title="Plank"></a>Plank</h3><p>安装了Plank后，能够像mac一样在底部显示快捷栏，此时可以在设置中关闭dock</p>
+<p>如果向底部添加新的应用，可以直接点开应用，然后右键图标，固定到plank</p>
+<p>此外，还需要设置自启动Plank</p>
+<ul>
+<li>sudo apt-get install plank</li>
+</ul>
+<h3 id="系统美化"><a href="#系统美化" class="headerlink" title="系统美化"></a>系统美化</h3><p>参考：<a href="https://blog.csdn.net/ice__snow/article/details/80152068" target="_blank" rel="noopener">https://blog.csdn.net/ice__snow/article/details/80152068</a></p>
+<h3 id="微软雅黑字体"><a href="#微软雅黑字体" class="headerlink" title="微软雅黑字体"></a>微软雅黑字体</h3><blockquote>
+<p><a href="https://blog.csdn.net/qq183837971/article/details/78235144" target="_blank" rel="noopener">https://blog.csdn.net/qq183837971/article/details/78235144</a></p>
+</blockquote>
+<p>可以从windows系统下的C:\Windows\Fonts文件夹下复制需要的字体文件，注意必须是ttf格式</p>
+<ul>
+<li>下载 msyh.ttf 和 msyhbd.ttf (注意是ttf文件，不是ttc文件)</li>
+<li>复制到/usr/share/fonts/winFonts文件中，文件夹自建</li>
+<li>sudo chmod 644 /usr/share/fonts/winFonts/*.ttf</li>
+<li>sudo mkfontscale （创建雅黑字体的fonts.scale文件，它用来控制字体旋转缩放）</li>
+<li>sudo mkfontdir （创建雅黑字体的fonts.dir文件，它用来控制字体粗斜体产生）</li>
+<li>sudo fc-cache -fv （建立字体缓存信息，也就是让系统认识雅黑）</li>
+<li>安装unity-tweak-tool，设置字体</li>
+</ul>
+<h3 id="截图软件Flameshot"><a href="#截图软件Flameshot" class="headerlink" title="截图软件Flameshot"></a>截图软件Flameshot</h3><ul>
+<li>安装该软件后，可以自己设置截图快捷键，在设置中，命令设为<code>flameshot gui</code></li>
+</ul>
+<h3 id="安装qtorrent"><a href="#安装qtorrent" class="headerlink" title="安装qtorrent"></a>安装qtorrent</h3><p>直接sudo apt install qbittorrent，这款工具用来下载bittorrent很不错，记得添加github上的trackers</p>
+<h3 id="SwitchyOmega配置auto-switch"><a href="#SwitchyOmega配置auto-switch" class="headerlink" title="SwitchyOmega配置auto switch"></a>SwitchyOmega配置auto switch</h3><p>在ubuntu使用electron-ssr时，无法实现PAC，所以通过浏览器的插件实现。需要先添加一个代理设置，再配置Omega插件的auto switch。使用在线规则进行自动切换代理</p>
+<ul>
+<li>配置教程：<a href="https://github.com/FelisCatus/SwitchyOmega/wiki/GFWList" target="_blank" rel="noopener">https://github.com/FelisCatus/SwitchyOmega/wiki/GFWList</a></li>
+<li>gfwlist：<a href="https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt" target="_blank" rel="noopener">https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt</a></li>
+</ul>
+<h3 id="安装WPS-Office"><a href="#安装WPS-Office" class="headerlink" title="安装WPS Office"></a>安装WPS Office</h3><blockquote>
+<p><a href="https://blog.csdn.net/qq_14824885/article/details/81286682" target="_blank" rel="noopener">https://blog.csdn.net/qq_14824885/article/details/81286682</a></p>
+</blockquote>
+<h2 id="配置环境"><a href="#配置环境" class="headerlink" title="配置环境"></a>配置环境</h2><h3 id="安装N卡驱动"><a href="#安装N卡驱动" class="headerlink" title="安装N卡驱动"></a>安装N卡驱动</h3><p><strong>传统方式</strong></p>
+<ul>
+<li>sudo add-apt-repository ppa:graphics-drivers/ppa</li>
+<li>sudo apt-get update</li>
+<li>ubuntu-drivers devices (查看所需驱动版本)</li>
+<li>sudo apt-get install nvidia-driver-***(版本号)</li>
+</ul>
+<p>若提示无法找到add-apt-repository命令，则执行sudo apt-get install software-properties-common</p>
+<p>若提示fetch error，则执行 sudo apt-get update</p>
+<p><strong>简单方式</strong></p>
+<blockquote>
+<p><a href="https://blog.csdn.net/tjuyanming/article/details/80862290" target="_blank" rel="noopener">https://blog.csdn.net/tjuyanming/article/details/80862290</a></p>
+</blockquote>
+<ul>
+<li>sudo apt-get update</li>
+<li>sudo ubuntu-drivers autoinstall</li>
+</ul>
+<p>安装驱动完成后 sudo reboot</p>
+<p><strong>可选方式</strong></p>
+<ul>
+<li>从 software&amp;updates 的 additional drivers 中选择驱动进行安装</li>
+</ul>
+<h3 id="配置-CUDA-CUDNN"><a href="#配置-CUDA-CUDNN" class="headerlink" title="配置 CUDA + CUDNN"></a>配置 CUDA + CUDNN</h3><blockquote>
+<p><a href="https://blog.csdn.net/gdymind/article/details/82153643" target="_blank" rel="noopener">https://blog.csdn.net/gdymind/article/details/82153643</a></p>
+</blockquote>
+<ul>
+<li>下载CUDA：<a href="https://developer.nvidia.com/cuda-downloads" target="_blank" rel="noopener">https://developer.nvidia.com/cuda-downloads</a></li>
+<li>按照官网说明进行安装</li>
+<li>下载CUDNN：<a href="https://developer.nvidia.com/rdp/cudnn-download" target="_blank" rel="noopener">https://developer.nvidia.com/rdp/cudnn-download</a> （选择cuDNN Runtime Library for Ubuntu18.04 (Deb)）</li>
+</ul>
+<h2 id="报错处理"><a href="#报错处理" class="headerlink" title="报错处理"></a>报错处理</h2><h3 id="cannot-execute-binary-file"><a href="#cannot-execute-binary-file" class="headerlink" title="cannot execute binary file"></a>cannot execute binary file</h3><ul>
+<li>sudo chmod +x ***    (给文件添加可执行权限)</li>
+<li>./*** （执行文件）</li>
+</ul>
+
+                
+
+                <hr>
+                <!-- Pager -->
+                <ul class="pager">
+                    
+                    
+                        <li class="next">
+                            <a href="/2020/03/29/编程-python/" data-toggle="tooltip" data-placement="top" title="编程-python">下一篇 &rarr;</a>
+                        </li>
+                    
+                </ul>
+
+                <br>
+
+                <!--打赏-->
+                
+                <!--打赏-->
+
+                <br>
+                <!--分享-->
+                
+                    <div class="social-share"  data-wechat-qrcode-helper="" align="center"></div>
+                    <!--  css & js -->
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/css/share.min.css">
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/js/social-share.min.js"></script>
+                
+                <!--分享-->
+                <br>                       
+                
+                <!-- require APlayer -->
+                
+
+                <!-- disqus comment start -->
+                
+                <!-- disqus comment end -->
+
+                
+				
+            </div>
+
+            <!-- Tabe of Content -->
+            <!-- Table of Contents -->
+
+                
+            <!-- Sidebar Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                <!-- Featured Tags -->
+                
+                <section>
+                    <!-- no hr -->
+                    <h5><a href="/tags/">标签云</a></h5>
+                    <div class="tags">
+                       
+                          <a class="tag" href="/tags/#linux" title="linux">linux</a>
+                        
+                    </div>
+                </section>
+                
+
+                <!-- Friends Blog -->
+                
+                <hr>
+                <h5>FRIENDS</h5>
+                <ul class="list-inline">
+
+                    
+                        <li><a href="https://github.com/zhangsunny" target="_blank">GitHub</a></li>
+                    
+                        <li><a href="https://zhangsunny.github.io/" target="_blank">Blog</a></li>
+                    
+                </ul>
+                
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+<!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
+<script>
+    async("https://cdn.bootcss.com/anchor-js/1.1.1/anchor.min.js",function(){
+        anchors.options = {
+          visible: 'hover',
+          placement: 'left',
+          icon: 'ℬ'
+        };
+        anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
+    })
+</script>
+<style>
+    /* place left on bigger screen */
+    @media all and (min-width: 800px) {
+        .anchorjs-link{
+            position: absolute;
+            left: -0.75em;
+            font-size: 1.1em;
+            margin-top : -0.1em;
+        }
+    }
+</style>
+
+
+
+    <!-- Footer没使用 -->
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                
+                
+                
+
+                
+
+                
+
+                
+                    <li>
+                        <a target="_blank"  href="https://github.com/zhangsunny">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                
+
+                
+
+                </ul>
+                <p class="copyright text-muted">
+                    Copyright &copy; zhangsunny 2020 
+                    <br>
+                    Powered by <a href="http://www.hexo.io" target="_blank" rel="noopener">Hexo</a> 
+                    <span style="display: inline-block; margin: 0 5px;">
+                        <i class="fa fa-heart"></i>
+                    </span> 
+                    Theme by <a href="https://github.com/kinggozhang/hexo-theme-ace" target="_blank" rel="noopener">ACE</a> 
+					
+					
+					<i class="fa fa-eye" id="leancounter"></i>
+					
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+
+   
+<script src="https://cdn.staticfile.org/jquery/2.2.4/jquery.min.js"></script>
+
+
+
+
+<!-- Bootstrap Core JavaScript -->
+
+   
+<script src="https://cdn.staticfile.org/twitter-bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+
+<!-- Custom Theme JavaScript -->
+
+<script src="/js/hux-blog.min.js"></script>
+
+
+
+	
+<script src="/js/particles.js"></script>
+
+	
+<script src="/js/particles_config.js"></script>
+
+
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+<!-- 
+     Because of the native support for backtick-style fenced code blocks 
+     right within the Markdown is landed in Github Pages, 
+     From V1.6, There is no need for Highlight.js, 
+     so Huxblog drops it officially.
+
+     - https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0  
+     - https://help.github.com/articles/creating-and-highlighting-code-blocks/    
+-->
+<!--
+    <script>
+        async("http://cdn.bootcss.com/highlight.js/8.6/highlight.min.js", function(){
+            hljs.initHighlightingOnLoad();
+        })
+    </script>
+    <link href="http://cdn.bootcss.com/highlight.js/8.6/styles/github.min.css" rel="stylesheet">
+-->
+
+
+<!-- jquery.tagcloud.js -->
+<script>
+    // only load tagcloud.js in tag.html
+    if($('#tag_cloud').length !== 0){
+        async("http://yoursite.com/2020/04/17/%E6%8A%98%E8%85%BE-ubuntu/index.html/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                //size: {start: 1, end: 1, unit: 'em'},
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+<!--fastClick.js -->
+<script>
+    async("https://cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+<!-- Google Analytics -->
+
+
+
+
+<!-- Baidu Tongji -->
+
+
+
+
+
+
+	<a id="rocket" href="#top" class=""></a>
+	<script type="text/javascript" src="/js/totop.js?v=1.0.0" async=""></script>
+    <script type="text/javascript" src="/js/toc.js?v=1.0.0" async=""></script>
+<!-- Image to hack wechat -->
+<img src="http://yoursite.com/img/icon_wechat.jpg" width="0" height="0" />
+<!-- Migrate from head to bottom, no longer block render and still work -->
+
+</body>
+
+</html>
